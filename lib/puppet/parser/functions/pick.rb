@@ -20,7 +20,7 @@ EOS
    args.delete(:undef)
    args.delete(:undefined)
    args.delete("")
-   raise(Puppet::ParseError, "pick(): must receive at last one" +
+   raise(Puppet::ParseError, "pick(): must receive at last one " +
       "non empty value") if args[0].to_s.empty? 
    args[0]
  end
